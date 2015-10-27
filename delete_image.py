@@ -1,6 +1,7 @@
 # /usr/bin/python
 # -*- coding: utf-8 -*-
 # __author__ = 'Kuhn'
+# company = 'Asiainfo'
 # qq:170478063
 
 import os,sys,shutil

@@ -1,6 +1,9 @@
 # docker_registry_clean
-Author : Kuhn
-QQ : 170478063
+__author__ = 'Kuhn'
+
+company = 'Asiainfo'
+
+qq:170478063
 
 清理docker私有仓库
 
