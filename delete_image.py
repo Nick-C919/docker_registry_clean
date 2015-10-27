@@ -110,7 +110,7 @@ class Delete_image:
                 del self.nodes[0][image_id_t]
                 if image_id_t in self.nodes[1]:
                     self.nodes[1].remove(image_id_t)
-                print  self.nodes
+                # print  self.nodes
                 self.delete_image(parent_id,metadata,begin='N')
             else:
                 print str(image_id_t)+"不存在，不需要删除"
