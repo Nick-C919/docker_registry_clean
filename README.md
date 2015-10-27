@@ -19,8 +19,11 @@ QQ : 170478063
 2.将docker_registry_clean目录放在docker私有仓库所在主机的某个目录下（需要有操作仓库目录的权限）
 
 3.执行如下命令
+
     python delete-image.py  {registry_path}  {image_name:image_tag}
+    
     ----------{registry_path}是仓库所在目录，其实就是启动仓库的时候指定的目录（-v /home/registry-storage:/home/registry-storage -w /home/registry-storage） 默认V1版本的仓库根目录下有这两个目录：images  repositories
+    
     ----------{image_name:image_tag}  镜像:tag
     
 
