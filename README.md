@@ -15,6 +15,8 @@ qq:170478063
 
 2.当image所有的tag均删除后，会尝试删除该image历史冗余的所有镜像
 
+3.清理某image下所有无用的层
+
 操作方法：
 
 1.下载本工具包docker_registry_clean
@@ -23,7 +25,13 @@ qq:170478063
 
 3.执行如下命令
 
+    删除指定镜像指定tag：
+    
     python delete-image.py  {registry_path}  {image_name:image_tag}
+    
+    删除某镜像无用层：
+    
+    python delete-image.py  {registry_path}  {image_name}    
     
     ----------{registry_path}是仓库所在目录，其实就是启动仓库的时候指定的目录（-v /home/registry-storage:/home/registry-storage -w /home/registry-storage） 默认V1版本的仓库根目录下有这两个目录：images  repositories
     
